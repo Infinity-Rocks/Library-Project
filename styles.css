@@ -1,0 +1,152 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(126, 125, 125);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 1200px;
+    border: 2px solid red;
+    background-color: black;
+    gap: 30px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+.add-book,
+.books-completed,
+.home-page {
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.book-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0px 0px 30px 30px;
+}
+
+.completed {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0px 0px 30px 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 200px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+input[type=text],
+input[type=number] {
+    width: 94%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.submit-btn,
+.cancel-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.cancel-btn {
+    background-color: red;
+}
+
+.submit-btn:hover,
+.cancel-btn:hover {
+    opacity: 1;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.remove-book,
+.read-book {
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.remove-book {
+    background-color: rgb(255, 52, 52);
+}
+
+.read-book {
+    background-color: rgb(50, 50, 255);
+}

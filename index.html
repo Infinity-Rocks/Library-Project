@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                My Library
+            </div>
+            <div class="navbar">
+                <button class="books-completed">Books Read</button>
+                <button class="home-page">Library</button>
+                <button class="add-book">Add Book</button>
+            </div>
+        </div>
+        <div class="book-view"></div>
+        <div class="completed"></div>
+    </div>
+    <div class="popup-form" id="form-popup">
+        <form action="#" class="form-container" autocomplete="off" onsubmit="addBookToLibrary(event)">
+            <h1>Add New Book</h1>
+
+            <label for="book-name">Name</label>
+            <input type="text" name="book-name" id="book-name" required>
+
+            <label for="book-author">Author</label>
+            <input type="text" name="book-author" id="book-author" required>
+
+            <label for="book-pages">Pages</label>
+            <input type="number" name="book-pages" id="book-pages" required>
+
+            <button type="submit" class="submit-btn">Add Book</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </form>
+    </div>
+    <script src="./scripts.js" defer></script>
+</body>
+
+</html>
